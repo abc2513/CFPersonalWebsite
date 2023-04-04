@@ -1,0 +1,33 @@
+[
+    {
+        "key":"index",
+        "label":"index",
+        "file":"work_index.md"
+    },
+    {
+        "key":"work-1",
+        "label":"group 1",
+        "children":[
+            {
+                "key":"work-1-1",
+                "label":"web课程笔记",
+                "file":"note_web.md"
+            }
+        ],
+        "icon":null,
+        "type":"group"
+    },
+    {
+        "key":"work-2",
+        "label":"group 2",
+        "children":[
+            {
+                "key":"work-2-1",
+                "label":"ES6笔记",
+                "file":"note_es6.md"
+            }
+        ],
+        "icon":null,
+        "type":"group"
+    }
+]

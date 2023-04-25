@@ -15,12 +15,14 @@ export default class LeftMenu extends Component {
   render() {
     let articleList=this.state.articleList
     return (
-        <Menu
-        onClick={this.onClick}
-        style={{ width: 256}}
-        mode="inline"
-        items={articleList}
-      />
+        <div className="left-menu">
+            <Menu
+            onClick={this.onClick}
+            style={{ width: 256}}
+            mode="inline"
+            items={articleList}
+          />
+        </div>
     )
   }
   componentDidMount(){

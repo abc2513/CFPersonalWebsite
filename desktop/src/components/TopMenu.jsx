@@ -28,7 +28,8 @@ export default withRouter(class TopMenu extends Component {
     return (
       <div>
         <div 
-          style={{float:'left',height:'45.8px',display:'inline-block',fontSize:'25px',color:'#85a5ff',fontFamily:'Papyrus'}}
+          className='top-menu-logo'
+          style={{}}
           onClick={()=>this.props.history.push('/index')}>
           cfPersonalWebsite
         </div>

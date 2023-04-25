@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import 'github-markdown-css/github-markdown-light.css'
 import PubSub from 'pubsub-js'
 export default class Display extends Component {
@@ -13,7 +12,7 @@ export default class Display extends Component {
     let article_file=this.props.match.params.article
     if(article_file.match(/\.md$/)){
       return (
-        <div  className="display height-limit" >
+        <div className="display" >
           <iframe src={`./data/article/${this.props.match.params.page}/md-reader.html?mdurl=${article_file}`}
             width="100%"
             height="100%"
@@ -24,7 +23,7 @@ export default class Display extends Component {
     }
     if(article_file.match(/\.html$/)){
       return(
-        <div  className="display height-limit" >
+        <div  className="display" >
           <iframe src={`./data/article/${this.props.match.params.page}/${article_file}`}
             width="100%"
             height="100%"
@@ -36,7 +35,7 @@ export default class Display extends Component {
     }
     if(article_file.match(/\.pdf$/)){
       return(
-        <div  className="display height-limit" >
+        <div  className="display" >
           <iframe src={`./lab/pdfJs/generic/web/viewer.html?file=../../../../../data/article/${this.props.match.params.page}/${article_file}`}
             width="100%"
             height="100%"

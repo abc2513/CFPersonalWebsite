@@ -1,9 +1,0 @@
-.display{
-    width:calc(100vw - 290px);
-    position: absolute;
-    top:3.5rem;
-    right: 1.5rem;
-}
-.height-limit{
-    height: calc(100vh - 50px);
-}

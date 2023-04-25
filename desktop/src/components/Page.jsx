@@ -4,7 +4,7 @@ import LeftMenu from './LeftMenu'
 import IndexPage from '../pages/IndexPage'
 import AboutPage from '../pages/AboutPage'
 import { Route, Switch,Redirect } from 'react-router-dom'
-import './Display.css'
+import './Page.css'
 export default class Page extends Component {
   render(){
     return (
